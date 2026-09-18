@@ -1,17 +1,7 @@
 function toggleMenu() {
-    const nav = document.getElementById("navLinks");
-    nav.classList.toggle("show");
-}
 
-function kirimPesan(event) {
-    event.preventDefault();
+    const navbar = document.getElementById("navbar");
 
-    const nama = document.getElementById("nama").value;
+    navbar.classList.toggle("show");
 
-    alert(
-        "Terima kasih, " + nama +
-        "! Pesan kamu berhasil dikirim."
-    );
-
-    event.target.reset();
 }
