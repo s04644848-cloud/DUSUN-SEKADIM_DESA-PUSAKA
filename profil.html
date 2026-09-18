@@ -1,77 +1,228 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Desa - Desa Pusaka</title>
-    <link rel="stylesheet" href="css/style.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Profil Dusun Sekadim - Desa Pusaka</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.page {
+    padding: 70px 7%;
+}
+
+.page-header {
+    background: #246b45;
+    color: white;
+
+    padding: 60px 7%;
+
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 42px;
+}
+
+.content {
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 25px rgba(0,0,0,.06);
+}
+
+.content h2 {
+    color: #246b45;
+
+    margin-bottom: 15px;
+}
+
+.content p {
+    margin-bottom: 20px;
+
+    color: #606861;
+}
+
+.data-desa {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+}
+
+.data-item {
+    padding: 20px;
+
+    background: #edf7f0;
+
+    border-radius: 10px;
+}
+
+.data-item strong {
+    display: block;
+
+    color: #246b45;
+}
+
+@media(max-width:600px) {
+
+    .data-desa {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
 </head>
+
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">Desa Pusaka</div>
+<header class="header">
 
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="profil.html" class="active">Profil</a></li>
-            <li><a href="potensi.html">Potensi</a></li>
-            <li><a href="galeri.html">Galeri</a></li>
-            <li><a href="kontak.html">Kontak</a></li>
-        </ul>
+<div class="logo">
 
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
-    </nav>
+<div class="logo-icon">DS</div>
+
+<div>
+<h2>Dusun Sekadim</h2>
+<span>Desa Pusaka</span>
+</div>
+
+</div>
+
+<button class="menu-btn"
+onclick="toggleMenu()">☰</button>
+
+<nav id="navbar">
+
+<a href="index.html">Beranda</a>
+
+<a href="profil.html"
+class="active">Profil</a>
+
+<a href="potensi.html">Potensi</a>
+
+<a href="galeri.html">Galeri</a>
+
+<a href="kontak.html">Kontak</a>
+
+<a href="pengaduan.html">Pengaduan</a>
+
+</nav>
+
 </header>
 
-<section class="page-title">
-    <h1>Profil Desa</h1>
-    <p>Mengenal Desa Pusaka dan Dusun Sekadim</p>
+
+<section class="page-header">
+
+<h1>Profil Dusun</h1>
+
+<p>Mengenal Dusun Sekadim, Desa Pusaka lebih dekat</p>
+
 </section>
 
-<section class="content">
-    <h2>Tentang Desa Pusaka</h2>
 
-    <p>
-        Desa Pusaka merupakan desa yang berada di Kabupaten Sambas,
-        Provinsi Kalimantan Barat. Desa ini memiliki lingkungan yang
-        asri serta kehidupan masyarakat yang masih menjunjung tinggi
-        kebersamaan.
-    </p>
+<section class="page">
 
-    <p>
-        Salah satu bagian dari Desa Pusaka adalah Dusun Sekadim.
-        Keindahan lingkungan dan kehidupan masyarakat menjadi bagian
-        penting dari identitas desa.
-    </p>
+<div class="content">
 
-    <div class="profile-box">
-        <div>
-            <h3>Nama Desa</h3>
-            <p>Desa Pusaka</p>
-        </div>
+<h2>Tentang Dusun Sekadim</h2>
 
-        <div>
-            <h3>Dusun</h3>
-            <p>Sekadim</p>
-        </div>
+<p>
+Dusun Sekadim merupakan salah satu dusun
+yang berada di wilayah Desa Pusaka.
+Dusun ini memiliki potensi sumber daya alam
+dan sumber daya masyarakat yang dapat
+dikembangkan untuk mendukung kemajuan
+masyarakat dan desa.
+</p>
 
-        <div>
-            <h3>Kabupaten</h3>
-            <p>Sambas</p>
-        </div>
+<p>
+Website ini dibuat sebagai media informasi
+digital untuk membantu masyarakat memperoleh
+informasi mengenai Dusun Sekadim dan Desa Pusaka
+secara lebih mudah, cepat, dan informatif.
+</p>
 
-        <div>
-            <h3>Provinsi</h3>
-            <p>Kalimantan Barat</p>
-        </div>
-    </div>
+
+<h2>Data Dusun</h2>
+
+<div class="data-desa">
+
+<div class="data-item">
+<strong>Nama Dusun</strong>
+Dusun Sekadim
+</div>
+
+<div class="data-item">
+<strong>Desa</strong>
+Desa Pusaka
+</div>
+
+<div class="data-item">
+<strong>Wilayah</strong>
+Kalimantan Barat
+</div>
+
+<div class="data-item">
+<strong>Pelayanan</strong>
+Informasi Masyarakat
+</div>
+
+</div>
+
+</div>
+
 </section>
+
 
 <footer>
-    <p>© 2026 Desa Pusaka - Dusun Sekadim</p>
+
+<div>
+<h3>Dusun Sekadim</h3>
+<p>
+Website informasi dan pelayanan
+Dusun Sekadim, Desa Pusaka.
+</p>
+</div>
+
+<div>
+<h4>Navigasi</h4>
+<a href="index.html">Beranda</a>
+<a href="profil.html">Profil</a>
+<a href="potensi.html">Potensi</a>
+</div>
+
+<div>
+<h4>Layanan</h4>
+<a href="kontak.html">Kontak</a>
+<a href="pengaduan.html">Pengaduan</a>
+</div>
+
 </footer>
 
+<div class="copyright">
+© 2026 Dusun Sekadim - Desa Pusaka
+</div>
+
 <script src="js/script.js"></script>
+
 </body>
 </html>
