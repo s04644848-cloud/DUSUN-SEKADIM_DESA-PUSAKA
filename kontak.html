@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Desa Pusaka</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Desa Pusaka</div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="potensi.html">Potensi</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="kontak.html" class="active">Kontak</a></li>
+        </ul>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>Kontak</h1>
+    <p>Hubungi kami</p>
+</section>
+
+<section class="contact">
+
+    <div class="contact-info">
+        <h2>Informasi Desa</h2>
+
+        <p>📍 Desa Pusaka, Dusun Sekadim</p>
+        <p>📍 Kabupaten Sambas, Kalimantan Barat</p>
+        <p>📞 Nomor Telepon Desa</p>
+        <p>✉️ Email Desa</p>
+    </div>
+
+    <form onsubmit="kirimPesan(event)">
+        <input type="text" id="nama" placeholder="Nama" required>
+
+        <input type="email" placeholder="Email" required>
+
+        <textarea id="pesan" rows="6"
+            placeholder="Tulis pesan..." required></textarea>
+
+        <button type="submit" class="btn">Kirim Pesan</button>
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 Desa Pusaka - Dusun Sekadim</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
