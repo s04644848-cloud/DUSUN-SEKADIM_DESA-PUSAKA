@@ -3,78 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Potensi Desa - Desa Pusaka</title>
+
+    <title>Potensi Dusun - Sekadim, Desa Pusaka</title>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .page-header {
+            background: #246b45;
+            color: white;
+            text-align: center;
+            padding: 65px 7%;
+        }
+
+        .page-header h1 {
+            font-size: 42px;
+        }
+
+        .potensi {
+            padding: 70px 7%;
+        }
+
+        .potensi-grid {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .potensi-card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 7px 25px rgba(0,0,0,.07);
+        }
+
+        .potensi-card .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .potensi-card h3 {
+            color: #246b45;
+            margin-bottom: 10px;
+        }
+
+        .potensi-card p {
+            color: #68716b;
+        }
+
+        @media(max-width:700px) {
+            .potensi-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">Desa Pusaka</div>
+<header class="header">
 
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="profil.html">Profil</a></li>
-            <li><a href="potensi.html" class="active">Potensi</a></li>
-            <li><a href="galeri.html">Galeri</a></li>
-            <li><a href="kontak.html">Kontak</a></li>
-        </ul>
+    <div class="logo">
+        <div class="logo-icon">DS</div>
 
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <div>
+            <h2>Dusun Sekadim</h2>
+            <span>Desa Pusaka</span>
+        </div>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="navbar">
+
+        <a href="index.html">Beranda</a>
+
+        <a href="profil.html">Profil</a>
+
+        <a href="potensi.html" class="active">
+            Potensi
+        </a>
+
+        <a href="galeri.html">Galeri</a>
+
+        <a href="kontak.html">Kontak</a>
+
+        <a href="pengaduan.html">Pengaduan</a>
+
     </nav>
+
 </header>
 
-<section class="page-title">
-    <h1>Potensi Desa</h1>
-    <p>Potensi dan keunggulan Desa Pusaka</p>
+
+<section class="page-header">
+
+    <h1>Potensi Dusun</h1>
+
+    <p>
+        Mengenal berbagai potensi Dusun Sekadim,
+        Desa Pusaka yang dapat dikembangkan bersama
+    </p>
+
 </section>
 
-<section class="features">
-    <div class="cards">
 
-        <div class="card">
-            <span>🌳</span>
-            <h3>Keindahan Alam</h3>
+<section class="potensi">
+
+    <div class="potensi-grid">
+
+
+        <div class="potensi-card">
+
+            <div class="icon">🌾</div>
+
+            <h3>Pertanian</h3>
+
             <p>
-                Lingkungan desa yang hijau dan asri menjadi salah satu
-                daya tarik Dusun Sekadim.
+                Sektor pertanian menjadi salah satu
+                bagian penting dalam kehidupan masyarakat
+                Dusun Sekadim dan memiliki peluang untuk
+                terus dikembangkan.
             </p>
+
         </div>
 
-        <div class="card">
-            <span>👨‍👩‍👧‍👦</span>
-            <h3>Masyarakat</h3>
+
+        <div class="potensi-card">
+
+            <div class="icon">🌳</div>
+
+            <h3>Sumber Daya Alam</h3>
+
             <p>
-                Kehidupan masyarakat yang menjunjung kebersamaan dan
-                gotong royong.
+                Lingkungan Dusun Sekadim memiliki
+                sumber daya alam yang dapat dimanfaatkan
+                secara bijaksana dan berkelanjutan.
             </p>
+
         </div>
 
-        <div class="card">
-            <span>🎨</span>
-            <h3>Budaya</h3>
+
+        <div class="potensi-card">
+
+            <div class="icon">👨‍👩‍👧‍👦</div>
+
+            <h3>Sumber Daya Manusia</h3>
+
             <p>
-                Budaya lokal menjadi bagian penting dari kehidupan
-                masyarakat di Kalimantan Barat.
+                Masyarakat Dusun Sekadim merupakan
+                bagian penting dalam pembangunan dan
+                perkembangan Desa Pusaka.
             </p>
+
         </div>
 
-        <div class="card">
-            <span>🌾</span>
-            <h3>Lingkungan</h3>
+
+        <div class="potensi-card">
+
+            <div class="icon">🏫</div>
+
+            <h3>Pendidikan</h3>
+
             <p>
-                Lingkungan sekitar dapat dikembangkan menjadi potensi
-                wisata dan kegiatan masyarakat.
+                Pendidikan menjadi salah satu dasar
+                penting dalam meningkatkan kualitas
+                generasi muda di Dusun Sekadim.
             </p>
+
         </div>
+
+
+        <div class="potensi-card">
+
+            <div class="icon">🏘️</div>
+
+            <h3>Kegiatan Masyarakat</h3>
+
+            <p>
+                Berbagai kegiatan masyarakat menjadi
+                bagian dari kehidupan sosial dan dapat
+                memperkuat kebersamaan warga Dusun Sekadim.
+            </p>
+
+        </div>
+
+
+        <div class="potensi-card">
+
+            <div class="icon">💼</div>
+
+            <h3>UMKM</h3>
+
+            <p>
+                Usaha masyarakat dapat terus dikembangkan
+                untuk mendukung kegiatan ekonomi dan
+                meningkatkan kesejahteraan masyarakat.
+            </p>
+
+        </div>
+
 
     </div>
+
 </section>
 
+
 <footer>
-    <p>© 2026 Desa Pusaka - Dusun Sekadim</p>
+
+    <div>
+
+        <h3>Dusun Sekadim</h3>
+
+        <p>
+            Website informasi dan pelayanan
+            Dusun Sekadim, Desa Pusaka.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <h4>Navigasi</h4>
+
+        <a href="index.html">Beranda</a>
+
+        <a href="profil.html">Profil</a>
+
+        <a href="potensi.html">Potensi</a>
+
+    </div>
+
+
+    <div>
+
+        <h4>Layanan</h4>
+
+        <a href="kontak.html">Kontak</a>
+
+        <a href="pengaduan.html">Pengaduan</a>
+
+    </div>
+
 </footer>
 
+
+<div class="copyright">
+
+    © 2026 Dusun Sekadim - Desa Pusaka
+
+</div>
+
+
 <script src="js/script.js"></script>
+
 </body>
 </html>
